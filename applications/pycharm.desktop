@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IDEs-Pycharm
+Exec=/usr/local/pycharm/bin/pycharm.sh
+Comment=Pycharm for python
+Terminal=false
+Categories=Development;
+Icon=/usr/local/pycharm/bin/pycharm.png
+Type=Application
+StartupNotif=true

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <localRepository>/home/cache-repository/java-maven</localRepository>
+
+    <pluginGroups>
+        <pluginGroup>org.sonatype.plugins</pluginGroup>
+    </pluginGroups>
+
+    <servers>
+        <server>
+            <id>nexus-maven_user</id>
+            <username>maven</username>
+            <password>Energy@123</password>
+        </server>
+    </servers>
+
+    <!-- <mirrors> -->
+        <!-- <mirror> -->
+            <!-- <id>nexus-maven_local</id> -->
+            <!-- <mirrorOf>*</mirrorOf> -->
+            <!-- <url>http://192.168.1.30:8081/repository/maven-public/</url> -->
+        <!-- </mirror> -->
+    <!-- </mirrors> -->
+
+    <profiles>
+        <profile>
+            <id>nexus-local</id>
+            <repositories>
+                <repository>
+                    <id>nexus-maven_user</id>
+                    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+                </repository>
+                <!-- <repository> -->
+                    <!-- <id>nexus-maven_user</id> -->
+                    <!-- <url>http://192.168.1.30:8081/repository/maven-snapshots/</url> -->
+                    <!-- <releases> -->
+                        <!-- <enabled>false</enabled> -->
+                    <!-- </releases> -->
+                    <!-- <snapshots> -->
+                        <!-- <enabled>true</enabled> -->
+                    <!-- </snapshots> -->
+                <!-- </repository> -->
+                <!-- <repository> -->
+                    <!-- <id>nexus-maven_user</id> -->
+                    <!-- <url>http://192.168.1.30:8081/repository/maven-releases/</url> -->
+                    <!-- <releases> -->
+                        <!-- <enabled>true</enabled> -->
+                    <!-- </releases> -->
+                    <!-- <snapshots> -->
+                        <!-- <enabled>false</enabled> -->
+                    <!-- </snapshots> -->
+                <!-- </repository> -->
+            </repositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>nexus-local</activeProfile>
+    </activeProfiles>
+
+</settings>

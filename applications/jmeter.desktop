@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=JMeter
+Comment=Apache JMeter for api test
+Exec=/usr/local/jmeter/bin/jmeter.sh
+Icon=/usr/local/jmeter/bin/report-template/content/pages/icon-apache.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Development;

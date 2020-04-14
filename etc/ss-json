@@ -1,0 +1,20 @@
+[
+  {
+    "server": "fq.energy-blockchain.com",
+    "server_port": "9083",
+    "password": "Energy@12345",
+    "method": "rc4-md5",
+    "remarks": "公司",
+    "route": "bypass-lan-china",
+    "ipv6": true
+  },
+  {
+    "server": "104.224.185.162",
+    "server_port": "1433",
+    "password": "huawei:m10",
+    "method": "aes-128-cfb",
+    "remarks": "搬瓦工",
+    "route": "bypass-lan-china",
+    "ipv6": true
+  }
+]

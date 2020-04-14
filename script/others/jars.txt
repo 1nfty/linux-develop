@@ -1,0 +1,16 @@
+/home/Github/harmony-mvn/releases/com/ibm/crl/chaincode-wrapper-deployer/0.1.1/chaincode-wrapper-deployer-0.1.1.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/chaincode-wrapper-java/0.2.3/chaincode-wrapper-java-0.2.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-client-java-sdk/0.0.3/harmony-client-java-sdk-0.0.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-client-java-sdk/0.9.4/harmony-client-java-sdk-0.9.4.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-driver-fabric-v1/0.0.3/harmony-driver-fabric-v1-0.0.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-driver-fabric-v1/0.9.4/harmony-driver-fabric-v1-0.9.4.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-embedded/0.0.3/harmony-embedded-0.0.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-embedded/0.9.4/harmony-embedded-0.9.4.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-java-sdk/0.0.3/harmony-java-sdk-0.0.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-java-sdk/0.9.4/harmony-java-sdk-0.9.4.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-java-sdk-api/0.0.3/harmony-java-sdk-api-0.0.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-java-sdk-api/0.9.4/harmony-java-sdk-api-0.9.4.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-java-sdk-sample/0.0.3/harmony-java-sdk-sample-0.0.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-java-sdk-sample/0.9.4/harmony-java-sdk-sample-0.9.4.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-runtime-cc-wrapper/0.0.3/harmony-runtime-cc-wrapper-0.0.3.jar
+/home/Github/harmony-mvn/releases/com/ibm/crl/harmony-runtime-cc-wrapper/0.9.4/harmony-runtime-cc-wrapper-0.9.4.jar

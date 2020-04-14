@@ -1,0 +1,22 @@
+{
+    "listen": ":29900",
+    "target": "fq.energy-blockchain.com:9083",
+    "key": "dou-bi.co",
+    "crypt": "aes-192",
+    "mode": "fast2",
+    "mtu": 1350,
+    "sndwnd": 512,
+    "rcvwnd": 512,
+    "datashard": 10,
+    "parityshard": 3,
+    "dscp": 0,
+    "nocomp": false,
+    "nodelay": 1,
+    "interval": 20,
+    "resend": 2,
+    "nc": 1,
+    "acknodelay": false,
+    "keepalive": 10,
+    "sockbuf": 4194304,
+    "log": "/home/DevTools/linux-develop/server/kcptun/server.log"
+}

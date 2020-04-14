@@ -1,0 +1,33 @@
+[diff]
+	tool = bc3
+[difftool "bc3"]
+	cmd = /usr/bin/bcompare \"$LOCAL\" \"$REMOTE\"
+[user]
+	name = bing.xu
+	email = bing.xu@nenglian.com
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+	last = log -1
+	d = difftool
+	m = mergetool
+[difftool]
+	prompt = false
+[merge]
+	tool = bc3
+[mergetool]
+	prompt = false
+[mergetool "bc3"]
+	cmd = /usr/bin/bcompare \"$LOCAL\" \"$REMOTE\" \"-savetarget=$MERGED\"
+	trustexitcode = true
+[core]
+	filemode = false
+	autocrlf = input
+; [http]
+	; proxy = socks5://127.0.0.1:1080
+; [https]
+	; proxy = socks5://127.0.0.1:1080
+[http]
+	postBuffer = 524288000

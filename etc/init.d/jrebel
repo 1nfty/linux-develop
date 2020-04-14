@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#chkconfig:2345 20 90
+#description:jrebel-license
+#processname:jrebel-license service
+
+JREBEL_HOME=/home/opt/jrebel-license
+case $1 in
+    start) su root ${JREBEL_HOME}/server.sh start;;
+    stop) su root ${JREBEL_HOME}/server.sh stop;;
+    status) su root ${JREBEL_HOME}/server.sh status;;
+    restart) su root ${JREBEL_HOME}/server.sh restart;;
+    *) echo "require start|stop|status|restart";;
+esac

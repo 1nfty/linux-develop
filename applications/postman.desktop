@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PostMan
+Exec=/home/opt/Postman/Postman
+Comment=PostMan for API test
+Terminal=false
+Categories=Development;
+Icon=/home/opt/Postman/app/resources/app/assets/icon.png
+Type=Application
+StartupNotify=true

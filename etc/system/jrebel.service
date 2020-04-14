@@ -1,0 +1,15 @@
+[Unit]
+Description=ReverseProxy server
+After=systemd-remount-fs.service
+
+[Service]
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/bin
+ExecStart=/home/opt/jrebel-license/server.sh start
+ExecStop=/home/opt/jrebel-license/server.sh stop
+ExecReload=/home/opt/jrebel-license/server.sh restart
+PIDFile=/home/opt/jrebel-license/jrebel-license.pid
+Type=forking
+User=root
+
+[Install]
+WantedBy=multi-user.target

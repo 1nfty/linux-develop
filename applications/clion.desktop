@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IDEs-CLion
+Exec=/usr/local/clion/bin/clion.sh
+Comment=CLion for C++ and Rust
+Terminal=false
+Categories=Development;
+Icon=/usr/local/clion/bin/clion.png
+Type=Application
+StartupNotify=true

@@ -1,0 +1,16 @@
+[Unit]
+Description=Zookeeper server
+After=systemd-remount-fs.service
+
+[Service]
+Environment=ZK_LOG_DIR=/home/opt/zookeeper/work/logs
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/bin:/usr/local/zookeeper/bin
+ExecStart=/home/opt/zookeeper/zookeeper-3.4.14/bin/zkServer.sh start
+ExecStop=/home/opt/zookeeper/zookeeper-3.4.14/bin/zkServer.sh stop
+ExecReload=/home/opt/zookeeper/zookeeper-3.4.14/bin/zkServer.sh restart
+PIDFile=/home/opt/zookeeper/work/data/zookeeper_server.pid
+Type=forking
+User=root
+
+[Install]
+WantedBy=multi-user.target

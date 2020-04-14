@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Navicat Premium
+Exec=/home/opt/navicat15/AppRun
+Comment=Database Development Tool
+Terminal=false
+Categories=Development;
+Icon=/home/opt/navicat15/navicat-icon.png
+Type=Application
+

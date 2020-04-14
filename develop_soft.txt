@@ -1,0 +1,75 @@
+双系统（或者windows+LinuxMint的虚拟机）安装完成后已经可以自动挂载Windows上的磁盘了，但需要点击一下才能自动挂在，需要设置为系统启动自动挂载。
+注意：Linux操作Windows磁盘上的文件，尽量不要在上面创建符号链接，以免后续拷贝文件报错。
+
+系统安装完成后需要的处理（不要打开root登录系统权限）
+1、安装中文输入法
+    直接在控制面板的Input method framework中安装并设置使用fcitx
+2、安装Chromeium web browser
+    sudo apt-get install chromium-browser
+    1）chromeium "unlock default keyring"提示问题解决：
+        find ~/ -name "login.keyring" |xargs rm -rf
+        重新打开chromium-browser，新密码和确认密码均不填，并选择使用不安全的存储即可。
+3、创建github.com的sslkey
+    直接参见github个人设置页的sslkey
+4、修改文件句柄限制
+    sudo vim /etc/security/limits.conf
+    最后添加：
+    * soft nofile 65536
+    * hard nofile 65536
+    sudo vim /etc/systemd/user.conf /etc/systemd/system.conf
+    DefaultLimitNOFILE=65536 （取消注释，并设置最大值）
+    非常重要：由于直接使用了Windows上好多文件，需要在Windows上将对应的文件夹控制权限放开。
+5、翻墙软件的安装，两种选择
+    1）系统软件管理中安装Shadowsocks-Qt5
+    2）使用第三方electron-ssr，github上下载最新版本安装，建议使用deb包安装
+        地址：https://github.com/shadowsocksrr/electron-ssr/releases，建议下载系统对应的deb版本安装。
+6、安装nvm和npm，参见：https://github.com/nvm-sh/nvm，
+    安装cnpm：npm install -g cnpm --registry=https://registry.npm.taobao.org
+7、需要从download目录（或者网上下载）的deb文件安装软件
+    目录：/media/xubing/Workspace/Download/system/linux/develop-tools
+    1）smartgit-19_1-rc-2.deb
+    2）bcompare-4.2.6.23150_amd64.deb
+    3）安装MySQL，直接执行脚本一键完成：/home/DevTools/linux-develop/script/develop/mysql_authorize.sh
+    4）安装Redis及客户端：sudo apt install -y redis-server，客户端(Redis Desktop Manager Linux免费使用)：
+        https://github.com/uglide/RedisDesktopManager/releases，命令：sudo snap install redis-desktop-manager
+    5）安装zookeeper，直接使用压缩包安装，设置为系统服务即可。
+    6）安装MongDB
+    7）安装PostMan，下载地址：https://www.getpostman.com/downloads/
+    8）docker-compose安装：
+        sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+        sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+8、修改/etc/fstab自动挂在windows磁盘
+    /dev/sda4 /media/xubing/Windows         ntfs    defaults,uid=1000,gid=1000,umask=000,dmask=002,fmask=002    0    2
+    /dev/sda6 /media/xubing/Workspace       ntfs    defaults,uid=1000,gid=1000,umask=000,dmask=002,fmask=002    0    2
+9、添加文件或者目录的符号链接
+    #(optional) mkdir -p /home/jar-repository
+    执行DevTools/linux-develop/script/install.sh设置免安装软件
+10、卸载不需要的软件，并安装新的软件
+    0）卸载软件：自带Office，GNotes，
+    1）安装WPS Linux版本
+    2）QQLite和微信，安装DeepinWine对应的版本
+    3）Navicat Premium 15安装
+    4）视频播放器
+        sudo add-apt-repository ppa:cos-lyk/moonsoft
+        sudo apt update
+        sudo apt install moonplayer
+    5）音频播放器（第三方网易云音乐）：https://github.com/trazyn/ieaseMusic/releases
+11、开发环境Java替换处理：
+    Replace java from OpenJDK to Oracle JDK：
+    sudo apt-get update && sudo apt-get remove openjdk*
+    tar -zxvf jdk-8u181-linux-x64.tar.gz
+    sudo mkdir -p /opt/java
+    sudo mv jdk1.8.0_181 /usr/local/java
+    sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/bin/java" 1
+    sudo update-alternatives --set java /usr/local/java/bin/java
+12、Keyboard快捷键取消：
+    General
+        Troubleshooting：修改Super+L为Alt+Super+L
+    Workspaces：
+        取消Ctrl+Alt+Left/Right
+    System:
+        Lock screen：修改Ctrl+Alt+L为Super+L
+    Launchers：
+        Launch terminal：取消Ctrl+Alt+T
+

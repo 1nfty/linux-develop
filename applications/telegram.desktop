@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Telegram Desktop
+Comment=Official desktop version of Telegram messaging app
+TryExec=/home/opt/telegram/Telegram
+Exec=/home/opt/telegram/Telegram -- %u
+Icon=/home/opt/telegram/telegram.svg
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/pt;

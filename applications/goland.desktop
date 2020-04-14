@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IDEs-GoLand
+Exec=/usr/local/goland/bin/goland.sh
+Comment=GoLand for go
+Terminal=false
+Categories=Development;
+Icon=/usr/local/goland/bin/goland.png
+Type=Application
+StartupNotif=true

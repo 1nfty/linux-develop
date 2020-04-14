@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Potato Desktop
+Comment=Official desktop application for the Potato messaging service
+TryExec=/media/xubing/Workspace/SourceForge/Linux/opt/potato/Potato
+Exec=/media/xubing/Workspace/SourceForge/Linux/opt/potato/Potato -- %u
+Icon=potato
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/pt;

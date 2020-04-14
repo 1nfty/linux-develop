@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=StarUML
+Exec=/home/opt/startuml/squashfs-root/staruml
+Comment=StarUML for develop
+Terminal=false
+Categories=Development;
+Icon=/home/opt/startuml/squashfs-root/usr/share/icons/hicolor/512x512/apps/staruml.png
+Type=Application
+StartupNotify=true

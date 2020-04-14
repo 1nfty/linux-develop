@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Beyond Compare
+Exec=bcompare
+TryExec=bcompare
+Comment=Compare, sync, and merge files and folders
+Terminal=false
+Categories=Development;
+Icon=bcompare
+Type=Application
+MimeType=application/beyond.compare.snapshot;

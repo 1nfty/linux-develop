@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IDEs-Intellij IDEA
+Exec=/usr/local/idea/bin/idea.sh
+Comment=Intellij IDEA for java
+Terminal=false
+Categories=Development;
+Icon=/usr/local/idea/bin/idea.png
+Type=Application
+StartupNotify=true

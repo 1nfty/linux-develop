@@ -1,0 +1,15 @@
+[Unit]
+Description=Nexus server
+After=systemd-remount-fs.service
+
+[Service]
+Environment=NEXUS_HOME=/home/opt/nexus
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/bin
+ExecStart=/home/opt/nexus/bin/server.sh start
+ExecStop=/home/opt/nexus/bin/server.sh stop
+ExecReload=/home/opt/nexus/bin/server.sh restart
+Type=forking
+User=root
+
+[Install]
+WantedBy=multi-user.target
