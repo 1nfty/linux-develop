@@ -64,7 +64,7 @@ function install_env() {
 sudo bash -c "$(declare -f do_link do_copy install_env); install_env"
 
 function install_soft() {
-    do_link /usr/local/idea      /media/xubing/Workspace/SourceForge/Linux/DevTools/IdeaIU-2019.3
+    do_link /usr/local/idea      /media/xubing/Workspace/SourceForge/Linux/DevTools/IdeaIU-2020.1
     do_link /usr/local/pycharm   /media/xubing/Workspace/SourceForge/Linux/DevTools/Pycharm-2019.3
     do_link /usr/local/goland    /media/xubing/Workspace/SourceForge/Linux/DevTools/GoLand-2019.3
     do_link /usr/local/clion     /media/xubing/Workspace/SourceForge/Linux/DevTools/Clion-2019.3

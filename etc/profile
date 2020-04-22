@@ -76,8 +76,8 @@ unset i
 unset -f pathmunge
 
 ## user setting
-export {http,ftp,https,rsync}_proxy="http://192.168.1.30:12333"
-# unset {http,ftp,https,rsync}_proxy
+export {http,ftp,https,rsync}_proxy="http://192.168.1.30:10080"
+unset {http,ftp,https,rsync}_proxy
 function getEnvStr() {
     str=$1
     exePath=$2
@@ -116,6 +116,8 @@ function add_lib() {
         export LD_LIBRARY_PATH="${env}"
     fi
 }
+# export GO111MODULE=auto
+export GOPROXY=https://goproxy.cn
 export DEPNOLOCK=1
 export GOROOT=/usr/local/go
 export GOPATH=/media/xubing/Workspace/DevelopWork/DevProjects

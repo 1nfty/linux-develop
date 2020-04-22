@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+/home/DevTools/linux-develop/etc/init.d/jrebel start
+/home/DevTools/linux-develop/etc/init.d/zookeeper start
+
+exit 0
